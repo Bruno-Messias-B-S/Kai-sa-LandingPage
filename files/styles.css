@@ -1,0 +1,993 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* MENU */
+
+.open {
+    width:0px;
+    height:calc(100vh - 50px);
+    position: absolute;
+    background-color: black;
+    opacity: 0.9;
+    right:0;
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.menu-item {
+    width:200px;
+    color:white;
+    font-family: 'Comfortaa', cursive;
+    margin-left:10px;
+    margin-top:10px;
+    font-size:18px;
+}
+
+.menu-hamb {
+    display:none;
+}
+
+
+/* HEADER */
+
+header {
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos {
+    margin-left:20px;
+    display:flex;
+    height:100%;
+    align-items: center;
+    gap:10px;
+}
+
+.logos img {
+    cursor: pointer;
+}
+
+.links {
+    gap:40px;
+    font-size:17px;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    height:100%;
+    display:flex;
+}
+
+.links a {
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    border:3px solid transparent;
+}
+
+.links a:hover {
+    border-bottom:3px solid rgb(36, 36, 255);
+    transition: 0.1s;
+}
+
+.globo {
+    margin-right:20px;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    font-size:17px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+.globo img {
+    padding:5px;
+    width:35px;
+}
+
+.globo img:hover {
+    background-color:rgb(180, 180, 180);
+    border-radius: 5px;
+}
+
+.globo img,
+.globo a {
+    cursor: pointer;
+}
+
+.iniciar {
+    background-color: rgb(36, 36, 255);
+    color:white;
+    padding:10px 20px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+.jogue {
+    padding:10px 20px;
+    border-radius: 5px;
+    border:1px solid transparent;
+}
+
+.jogue:hover {
+    background-color:rgb(253, 82, 82);
+    border:1px solid black;
+}
+
+
+/* MAIN */
+
+main {
+    height:calc(100vh - 50px);
+    background-image: url(../media/images/kaisa-desfocada.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+}
+
+.banner {
+    width:80%;
+    height:calc(100vh - 50px);
+    position: relative;
+}
+
+.banner img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-char {
+    position: absolute;
+    bottom:25px;
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.titulo-char h3 {
+    font-size:70px;
+    color:white;
+}
+
+.titulo-char h5 {
+    font-size:30px;
+    color:white;
+}
+
+
+/* SECTION - 1 */
+
+.sec-1 {
+    width:100%;
+    height:450px;
+    background-image: url(../media/images/kaisa-desfocada.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details-container {
+    width:80%;
+    height: 100%;
+    background-image:url(../media/png/atirador.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.description {
+    width:700px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.func {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.dificuldade {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.visao-geral {
+    width:100%;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5px;
+    margin-bottom:5px;
+    color:white;
+}
+
+.title {
+    font-size:23px;
+    color:rgb(122, 10, 187);
+}
+
+.vis {
+    color:rgb(255, 255, 255);
+    font-size:35px;
+    font-family: 'Comfortaa', cursive;
+    border: 1px solid white;
+    padding:10px 100px;
+    border-radius: 5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.desc {
+    font-size:18px;
+}
+
+
+/* SECTION - 2 */
+
+.sec-2 {
+    width:100%;
+    height:380px;
+    background-image: url(../media/images/kaisa-desfocada.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+}
+
+.skills-container {
+    width:80%;
+    height:380px;
+}
+
+.title-skills {
+    width:100%;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5px;
+    margin-bottom:5px;
+    color:white;
+}
+
+.title-skills h4 {
+    font-size:35px;
+    font-family: 'Comfortaa', cursive;
+    border: 1px solid white;
+    padding:10px 100px;
+    border-radius: 5px;
+}
+
+.skills-container-2 {
+    width:100%;
+    display:flex;
+}
+
+.skills-p1 {
+    width:60%;
+    height:300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    font-family: 'Comfortaa', cursive;
+    background-image: linear-gradient(to right, rgb(188, 111, 252), rgb(81, 18, 230));
+}
+
+.skill-p2 {
+    width:40%;
+    height:300px;
+    display: flex;
+}
+
+.skill-preview {
+    width:100%;
+    height:100%;
+}
+
+.skill-preview .frame {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skill-imgs img {
+    width:45px;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.skill-imgs img:hover {
+    outline:2px solid black;
+}
+
+.skill-title {
+    font-size:18px;
+    width:100%;
+    text-align: center;
+}
+
+.skill-name {
+    font-size:26px;
+    color:rgb(234, 198, 255);
+    width:100%;
+    text-align: center;
+    margin-bottom:5px;
+}
+
+.skill-desc {
+    font-size:18px;
+    text-align: center;
+    width:90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:130px;
+    line-height: 25px;
+}
+
+.skill-imgs {
+    display:flex;
+    gap:30px;
+}
+
+.selected {
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+
+/* SECTION - 3 */
+
+.sec-3 {
+    width:100%;
+    height:100vh;
+    background-image: url(../media/images/kaisa-desfocada.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.skins-container {
+    width:80%;
+    height:99%;
+    overflow: hidden;
+}
+
+.skins-title {
+    width:100%;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5px;
+    color:white;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.skins-title h4 {
+    font-size:35px;
+    font-family: 'Comfortaa', cursive;
+    border: 1px solid white;
+    padding:10px 100px;
+    border-radius: 5px;
+}
+
+.slides {
+    width:900%;
+    height:100%;
+    display:flex;
+}
+
+.slide {
+    width:11.12%;
+    transition: 0.5s;
+}
+
+.slide img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.slides-mini {
+    display:flex;
+    left:144px;
+    position: absolute;
+    gap:30px;
+}
+
+.slide-mini {
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:15px;
+    transition: 0.5s;
+}
+
+.slides-mini img {
+    width: 90px;
+    height:50px;
+    cursor: pointer;
+    border-radius:5px;
+    opacity:0.5;
+    object-fit: cover;
+}
+
+.bar {
+    position:absolute;
+    width:80%;
+    height: calc(100vh - 877px);
+    bottom:0%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bar-bar {
+    position: absolute;
+    width:390px;
+    height:80px;
+    background-color: transparent;
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-bottom:10px;
+    overflow: hidden;
+}
+
+.selected-skin img {
+    width:105px;
+    height:65px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.algo {
+    width:100%;
+    height:calc(100vh - 180px);
+    top:-100%;
+    bottom:50%;
+    position: relative;
+}
+
+.algo2 {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size:40px;
+    font-family: 'Comfortaa', cursive;
+    color:white;
+    text-shadow: 1px 1px 10px black, -1px 1px 10px black, 1px -1px 10px black, -1px -1px 10px black;
+}
+
+
+/* MEDIA */
+
+@media (min-width:0px) and (max-width:767px) {
+    
+    /* HEADER */
+
+    header {
+        width: 100%;
+    }
+
+    .menu-hamb {
+        display:flex;
+    }
+
+    .links,
+    .iniciar,
+    .jogue {
+        display:none;
+    }
+
+    
+    /* MAIN */
+
+    .banner {
+        width:100%;
+    }
+
+
+    /* SECTION - 1 */
+
+    .vis,
+    .title-skills h4,
+    .skins-title h4 {
+        font-size:20px;
+        width:100%;
+        text-align: center;
+    }
+
+    .details-container {
+        width:100%;
+    }
+
+    .sec-1 {
+        height:100vh;
+    }
+
+    .desc {
+        width:100%;
+        font-size:15px;
+    }
+
+    .title {
+        font-size:20px;
+    }
+
+    .description {
+        width:100%;
+    }
+
+
+    /* SECTION - 2 */
+
+    .sec-2 {
+        height:100vh;
+    }
+
+    .skills-container {
+        width:100%;
+        height:100vh;
+    }
+
+    .skills-container-2 {
+        height:100vh;
+        flex-direction: column;
+    }
+
+    .skills-p1 {
+        width:100%;
+        height:60%;
+        justify-content:space-around;
+    }
+
+    .skill-p2 {
+        width:100%;
+        height:200px;
+    }
+
+    .skill-imgs {
+        width:100%;
+        gap:20px;
+        justify-content: center;
+    }
+
+    .skill-imgs img {
+        width:40px;
+    }
+
+    .skill-desc {
+        margin-bottom: 55px;
+        font-size: 15px;
+    }
+
+    .skill-name {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+
+    .skill-title {
+        font-size:18px;
+    }
+
+
+    /* SECTION - 3 */
+
+    .sec-3 {
+        height: 73vh;
+    }
+
+    .skins-container {
+        width:100%;
+    }
+
+    .slides {
+        height: 250px;
+    }
+
+    .slides-mini {
+        left:100px;
+    }
+
+    .bar {
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .bar-bar {
+        width:300px;
+        display:flex;
+        margin-bottom:7px;
+    }
+
+    .algo {
+        height:97%;
+    }
+
+    .algo2 {
+        font-size:15px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    
+    /* HEADER */
+
+    header {
+        width: 100%;
+    }
+
+    .menu-hamb {
+        display:flex;
+    }
+
+    .menu-item.playNow,
+    .menu-item.session {
+        display:none;
+    }
+
+    .links {
+        display:none;
+    }    
+
+
+    /* MAIN */
+
+    .banner {
+        width:90%;
+    }
+
+
+    /* SECTION - 1 */
+
+    .details-container {
+        width:90%;
+    }
+
+    .description {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc {
+        width:90%;
+    }
+
+
+    /* SECTION - 2 */
+
+    .sec-2 {
+        height:100%;
+    }
+
+    .skills-container {
+        width:90%;
+        height:100%;
+    }
+
+    .skills-container-2 {
+        flex-direction: column;
+    }
+
+    .skills-p1 {
+        width:100%;
+        height:300px;
+        justify-content:space-around;
+    }
+
+    .skill-p2 {
+        width:100%;
+        height:300px;
+    }
+
+
+    /* SECTION - 3 */
+
+    .skins-container {
+        width:90%;
+    }
+
+    .sec-3 {
+        height: 100vh;
+    }
+
+    .skins-container {
+        width:90%;
+    }
+
+    .slides {
+        height: 500px;
+    }
+
+    .slides-mini {
+        left:125px;
+    }
+
+    .bar {
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .bar-bar {
+        width:350px;
+        display:flex;
+        margin-bottom:8px;
+    }
+
+    .algo {
+        height:80%;
+    }
+
+    .algo2 {
+        font-size:25px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:2000px) {
+    
+    /* HEADER */
+    
+    .jogue,
+    .iniciar {
+        display:flex;
+    }
+
+
+    /* MAIN */
+
+    .banner {
+        width:90%;
+    }
+
+
+    /* SECTION - 1 */
+    .details-container {
+        width:90%;
+    }
+
+    .skill-desc {
+        height: 160px;
+    }
+
+
+    /* SECTION - 2 */
+    
+    .skills-container {
+        width:90%;
+        height:100%;
+    }
+
+
+    /* SECTION - 3 */
+
+    .sec-3 {
+        height: 98.2vh;
+    }
+
+    .skins-container {
+        width:90%;
+    }
+
+    .slides {
+        height: 700px;
+    }
+
+    .slides-mini {
+        left:125px;
+    }
+
+    .bar {
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .bar-bar {
+        width:350px;
+        display:flex;
+        margin-bottom:9px;
+    }
+
+    .algo {
+        height:calc(100vh - 190px);
+    }
+}
+
+@media (min-width:1024px) and (max-width:1123px) {
+    .jogue,
+    .iniciar {
+        display:none;
+    }
+
+    .open {
+        display:flex;
+    }
+
+    .game,
+    .champs,
+    .atts,
+    .esp {
+        display:none;
+    }
+
+    .menu-hamb {
+        display:flex;
+    }
+}
+
+@media (min-width:1124px) and (max-width:2000px) {
+    
+    .jogue,
+    .iniciar {
+        display:flex;
+    }
+
+    .open {
+        display:none;
+    }
+
+    
+    /* SECTION - 3 */
+
+    .sec-3 {
+        height: 100vh;
+    }
+
+    .skins-container {
+        width:90%;
+    }
+
+    .slides {
+        height: 100%;
+    }
+
+    .slides-mini {
+        left:125px;
+    }
+
+    .bar {
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .bar-bar {
+        width:350px;
+        display:flex;
+        margin-bottom:11px;
+    }
+
+    .algo {
+        height:calc(100vh - 175px);
+    }
+    
+}
+
+@media (min-width:2560px){
+    
+    /* HEADER */
+
+    header {
+        height: 60px;
+    }
+
+    .logos img {
+        width:100px;
+    }
+
+    .links a {
+        font-size:23px;
+    }
+
+    .globo {
+        font-size:23px;
+    }
+
+
+    /* SECTION - 1 */
+
+    .sec-1 {
+        height:650px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .description {
+        width:1200px;
+        line-height: 35px;
+    }
+
+    .desc {
+        font-size: 30px;
+    }
+
+
+    /* SECTION - 2 */
+
+    .sec-2 {
+        height:650px;
+    }
+
+    .skills-container {
+        height:650px;
+    }
+
+    .skills-p1 {
+        height:650px;
+        justify-content: center;
+    }
+
+    .skill-p2 {
+        height:650px;
+    }
+
+    .skill-title {
+        font-size:30px;
+    }
+
+    .skill-name {
+        font-size: 40px;
+    }
+
+    .skill-desc {
+        font-size: 35px;
+        height: 300px;
+        line-height: 45px;
+    }
+
+    .skill-imgs img {
+        width:63px;
+    }
+
+
+    /* SECTION - 3 */
+
+    .bar-bar {
+        margin-bottom:24px;
+    }
+
+    .algo {
+        height:calc(100vh - 198px);
+    }
+}

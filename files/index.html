@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page | Kai'sa</title>
+    <link rel="stylesheet" href="../files/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fredoka:wght@300&family=Plus+Jakarta+Sans:wght@200&family=Roboto+Mono:wght@300&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="logos">
+            <img src="../media/png/logo-riot.png" width="80px">
+            <img src="../media/png/logo-lol.png" width="80px">
+        </div>
+        <div class="links">
+            <a>O Jogo</a>
+            <a>Campeões</a>
+            <a>Atualizações</a>
+            <a>E-Sports</a>
+        </div>
+        <div class="globo">
+            <img src="../media/png/globo.png" width="23px">
+            <a class="iniciar">Iniciar Sessão</a>
+            <a class="jogue">Jogue Agora</a>
+            <img class="menu-hamb" onclick="btnOpener()" src="../media/png/menu-aberto.png" >
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <img src="../media/images/kaisa.jpg">
+        </div>
+        <div class="titulo-char">
+            <h3>Kai'sa</h3>
+            <h5>A Filha do Vazio</h3>
+        </div>
+        <div class="open">
+            <a class="menu-item game">O Jogo</a>
+            <a class="menu-item champs">Campeões</a>
+            <a class="menu-item atts">Atualizações</a>
+            <a class="menu-item esp">E-Sports</a>
+            <a class="menu-item playNow">Jogue Agora</a>
+            <a class="menu-item session">Iniciar Sessão</a>
+        </div>
+    </main>
+
+    <section class="sec-1">
+        <div class="visao-geral">
+            <h4 class="vis">Visão Geral</h4>
+        </div>
+        <div class="details-container">
+            <div class="description">
+                <h4 class="desc">Capturada pelo Vazio quando era apenas uma criança, Kai'Sa conseguiu sobreviver por pura persistência e força de vontade. Suas experiências fizeram dela uma caçadora mortal e, para alguns, o prenúncio de um futuro que seria melhor não viver para ver. Inserida em uma desconfortável simbiose com uma carapaça viva do Vazio, é chegada a hora de decidir se ela perdoará os mortais que a chamam de monstro e derrotará a ameaçadora escuridão… ou se ela simplesmente os esquecerá, deixando o Vazio consumir o mundo que um dia também a deixou para trás.</h4>
+            </div>
+            <div class="func">
+                <h4 class="title">Função</h4>
+                <h4 class="desc">Atirador</h4>
+            </div>
+            <div class="dificuldade">
+                <h4 class="title">Dificuldade</h4>
+                <h4 class="desc">2/3</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-2">
+        <div class="skills-container">
+            <div class="title-skills">
+                <h4>Skills</h4>
+            </div>
+
+            <div class="skills-container-2">
+                <div class="skills-p1">
+                    <div class="skill-title">
+                        <h4>Passiva</h4>
+                    </div>
+                    <div class="skill-name">
+                        <h4>Segunda Pele</h4>
+                    </div>
+                    <div class="skill-desc">
+                        <h4>Os ataques básicos de Kai'Sa acumulam Plasma, causando Dano Mágico adicional crescente. Efeitos imobilizadores de aliados ajudam a acumular Plasma. Além disso, as aquisições de itens de Kai'Sa aprimoram suas habilidades básicas, deixando-as mais poderosas.</h4>
+                    </div>
+                    <div class="skill-imgs">
+                        <img class="btns selected" onclick="swapImg('https://www.youtube.com/embed/iEcbVEyZLHU')" src="../media/png/Passive.png" >
+                        <img class="btns" onclick="swapImg('https://www.youtube.com/embed/BdABVJ-uhF8')" src="../media/png/Q.png" >
+                        <img class="btns" onclick="swapImg('https://www.youtube.com/embed/-wTGY7XwUkA')" src="../media/png/W.png" >
+                        <img class="btns" onclick="swapImg('https://www.youtube.com/embed/K2JwZhvTni8')" src="../media/png/E.png" >
+                        <img class="btns" onclick="swapImg('https://www.youtube.com/embed/leoPEymrxt0')" src="../media/png/R.png" >
+                        
+                    </div>
+                </div>
+
+                <div class="skill-p2">
+                    <div class="skill-preview">
+                        <iframe class="frame" src="https://www.youtube.com/embed/iEcbVEyZLHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-3">
+        <div class="skins-container">
+            <div class="skins-title">
+                <h4>Skins</h4>
+            </div>
+
+            <div class="bar">
+            <div class="bar-bar">
+            <div class="slides-mini">
+
+                <div class="slide-mini k1 selected-skin">
+                    <img src="../media/skins/Kaisa.jpg">
+                </div>
+
+                <div class="slide-mini k2">
+                    <img src="../media/skins/Kaisa-disparos.jpg">
+                </div>
+
+                <div class="slide-mini k3">
+                    <img src="../media/skins/Kaisa-kda.jpg">
+                </div>
+
+                <div class="slide-mini k4">
+                    <img src="../media/skins/Kaisa-kda-prestige.jpg">
+                </div>
+
+                <div class="slide-mini k5">
+                    <img src="../media/skins/Kaisa-ig.jpg">
+                </div>
+
+                <div class="slide-mini k6">
+                    <img src="../media/skins/kaisa-fliperama.jpg">
+                </div>
+
+                <div class="slide-mini k7">
+                    <img src="../media/skins/Kaisa-kda-allout.png">
+                </div>
+
+                <div class="slide-mini k8">
+                    <img src="../media/skins/Kaisa-kda-allout-prestige.png">
+                </div>
+
+                <div class="slide-mini k9">
+                    <img src="../media/skins/kaisa-dragoa.jpg">
+                </div>
+
+            </div>
+            </div>
+            </div>
+            
+            <div class="slides">
+
+                <div class="slide first">
+                    <img src="../media/skins/Kaisa.jpg">
+                    <div class="algo">    
+                        <span class="algo2">Kai'sa</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../media/skins/Kaisa-disparos.jpg">
+                    <div class="algo">    
+                        <span class="algo2">Kai'sa Disparos Angelicais</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../media/skins/Kaisa-kda.jpg">
+                    <div class="algo">    
+                        <span class="algo2">Kai'sa K/DA</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../media/skins/Kaisa-kda-prestige.jpg">
+                    <div class="algo">    
+                        <span class="algo2">Kai'sa K/DA Prestígio</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../media/skins/Kaisa-ig.jpg">
+                    <div class="algo">    
+                        <span class="algo2">IG Kai'sa</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../media/skins/Kaisa-fliperama.jpg">
+                    <div class="algo">    
+                        <span class="algo2">Kai'sa Fliperama</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../media/skins/Kaisa-kda-allout.png">
+                    <div class="algo">    
+                        <span class="algo2">Kai'sa K/DA All Out</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../media/skins/Kaisa-kda-allout-prestige.png">
+                    <div class="algo">    
+                        <span class="algo2">Kai'sa K/DA All Out Prestígio</span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="../media/skins/kaisa-dragoa.jpg">
+                    <div class="algo">    
+                        <span class="algo2">Kai'sa Dragoa da Laguna</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../files/javas.js"></script>
+</body>
+</html>
