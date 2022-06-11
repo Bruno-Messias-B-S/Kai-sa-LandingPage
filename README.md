@@ -1,7 +1,7 @@
 # Kai'sa Landing Page
 
 ## | About
-<p>This is a Landing Page of a character from a game called League of Legends. It has been made to be interactive, pretty, and display all its features using the knowledge I own.</p>
+<p>This is a Landing Page of a character from a game called League of Legends. It has been made to be interactive, pretty, and displays all its features using the knowledge I own.</p>
 
 ## | Overview
 <img alt="Overview" src="./github/Kaisa-gif.gif" />
